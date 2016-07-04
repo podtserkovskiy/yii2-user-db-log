@@ -1,0 +1,22 @@
+{
+    "name": "podtserkovsky/yii2-user-db-log",
+    "description": "Yii2 User DB modifications logger",
+    "type": "yii2-extension",
+    "keywords": ["yii2","extension"],
+    "license": "BSD-4-Clause",
+    "authors": [
+        {
+            "name": "Podtserkovsky Mikhail",
+            "email": "mishko.kun@gmail.com"
+        }
+    ],
+    "require": {
+        "yiisoft/yii2": "*",
+        "baibaratsky/yii2-serialized-attributes-behavior": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "podtserkovsky\\userdblog\\": ""
+        }
+    }
+}
