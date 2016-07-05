@@ -23,7 +23,6 @@ class m160704_223404_create_table extends Migration
             'updated_at' => $this->timestamp(),
         ]);
 
-        $this->addForeignKey('user_db_log_user', 'user_db_log', 'user_id', 'user', 'id');
     }
 
     /**
@@ -31,7 +30,6 @@ class m160704_223404_create_table extends Migration
      */
     public function down()
     {
-        $this->dropForeignKey('user_db_log_user', 'user_db_log');
         $this->dropTable('user_db_log');
     }
 }
