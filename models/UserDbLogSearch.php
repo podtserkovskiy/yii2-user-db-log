@@ -61,15 +61,15 @@ class UserDbLogSearch extends UserDbLog
         }
 
         $query->andFilterWhere([
-            'id' => $this->id,
-            'entity_id' => $this->entity_id,
-            'created_at' => $this->created_at,
+            'user_db_log.id' => $this->id,
+            'user_db_log.entity_id' => $this->entity_id,
+            'user_db_log.created_at' => $this->created_at,
         ]);
 
-        $query->andFilterWhere(['like', 'entity', $this->entity])
+        $query->andFilterWhere(['like', 'user_db_log.entity', $this->entity])
             ->andFilterWhere(['like', 'user.username', $this->userName])
-            ->andFilterWhere(['like', 'event', $this->event])
-            ->andFilterWhere(['like', 'attributes', $this->attributes]);
+            ->andFilterWhere(['like', 'user_db_log.event', $this->event])
+            ->andFilterWhere(['like', 'user_db_log.attributes', $this->attributes]);
 
         return $dataProvider;
     }
