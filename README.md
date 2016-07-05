@@ -45,13 +45,13 @@ php yii migrate --migrationPath=@vendor/podtserkovsky/yii2-user-db-log/migration
 
 ```
 public function behaviors()
-    {
-        return [
-            [
-                'class' => UserDbLogBehavior::className()
-            ],
-        ];
-    }
+{
+    return [
+        [
+            'class' => UserDbLogBehavior::className()
+        ],
+    ];
+}
 
 ``
 
