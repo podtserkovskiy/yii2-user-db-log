@@ -25,15 +25,16 @@ to the require section of your `composer.json` file.
 Usage
 -----
 
-0. For demo install advanced yii https://github.com/yiisoft/yii2-app-advanced/blob/master/docs/guide/start-installation.md#installing-using-composer
+For demo install advanced yii https://github.com/yiisoft/yii2-app-advanced/blob/master/docs/guide/start-installation.md#installing-using-composer
+Create database and run initial migrations
 
-1. Apply migrations, run in console:
+Apply migrations, run in console:
 
 ```
 php yii migrate --migrationPath=@vendor/podtserkovsky/yii2-user-db-log/migrations
 ```
 
-2. Add in your app config:
+Add in your app config:
 ```
 'modules' => [
         'user-db-log' => [
@@ -41,7 +42,7 @@ php yii migrate --migrationPath=@vendor/podtserkovsky/yii2-user-db-log/migration
         ],
     ],
 ```
-3. Simply use it in your code by  :
+Simply use it in your code by in any ActiveRecord class :
 
 ```
 public function behaviors()
@@ -52,6 +53,5 @@ public function behaviors()
             ],
         ];
     }
-
-``
+```
 
