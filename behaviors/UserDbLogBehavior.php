@@ -45,7 +45,7 @@ class UserDbLogBehavior extends Behavior
         /** @var ActiveRecord $sender */
         $sender = $event->sender;
         $log->entity = $sender::className();
-        $userId = !empty(Yii::$app->user) ? Yii::$app->user->identity->getId() : self::SCRIPT;
+        $userId = !empty(Yii::$app->user->identity) ? Yii::$app->user->identity->getId() : self::SCRIPT;
         $log->user_id = $userId;
         $log->event = $event->name;
         $attributes = [];
