@@ -46,12 +46,13 @@ Simply use it in your code by in any ActiveRecord class :
 
 ```
 public function behaviors()
-    {
-        return [
-            [
-                'class' => UserDbLogBehavior::className()
-            ],
-        ];
-    }
-```
+{
+    return [
+        [
+            'class' => UserDbLogBehavior::className()
+        ],
+    ];
+}
+
+``
 
