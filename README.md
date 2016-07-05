@@ -56,3 +56,16 @@ public function behaviors()
 
 ``
 
+```
+
+You can then access Log through the following URL:
+
+```
+http://localhost/path/to/index.php?r=user-db-log
+```
+
+or if you have enabled pretty URLs, you may use the following URL:
+
+```
+http://localhost/path/to/index.php/user-db-log
+```
